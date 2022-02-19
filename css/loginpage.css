@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+}
+#container{
+  width: 100%;
+  height: auto;
+}
+#content {
+  width: 100%;
+  height: 1200px;
+  text-align: center;
+}
+#logoImg{
+  padding: 10px 10px;
+  position: relative;
+}
+#logo_img{
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+#logo_img > img{
+  position: relative;
+  top: 200px;
+}
+#log {
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#log > a > div{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid rgba(139, 131, 131, 0.5);
+  box-shadow: 1px 1px 2px 1px;
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+}
+#logkakao{
+  width: 65px;
+  height: 65px;
+  background: url("../image/kakao_icon.png") no-repeat left;
+  background-size: cover;
+}
+#lognaver{
+  width: 65px;
+  height: 65px;
+  background: url("../image/navericon.png") no-repeat left;
+  background-size: cover;
+}
+#logfacebook{
+  width: 65px;
+  height: 65px;
+  background: url("../image/facebook_icon.png") no-repeat left;
+  background-size: cover;
+}
+#loggoogle{
+  width: 65px;
+  height: 65px;
+  background: url("../image/google_icon.png") no-repeat left;
+  background-size: cover;
+}
+#form > button{
+  width: 300px;
+  height: 50px;
+  font-size: 24px;
+}
