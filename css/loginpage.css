@@ -44,7 +44,7 @@ body{
   height: 50px;
   border-radius: 100%;
   border: 1px solid rgba(139, 131, 131, 0.5);
-  box-shadow: 1px 1px 2px 1px;
+  box-shadow: 1px 1px 2px 1px #000;
   margin: 10px;
   float: left;
   overflow: hidden;
@@ -73,8 +73,34 @@ body{
   background: url("../image/google_icon.png") no-repeat left;
   background-size: cover;
 }
+#form{
+  animation-name: starts;
+  animation-duration: 1s;
+}
 #form > button{
-  width: 300px;
+  width: 400px;
   height: 50px;
   font-size: 24px;
+  display: block;
+  border-radius: 10px;
+  margin: 20px auto;
+  border: none;
+}
+#bt1 {
+  background-color: rgb(1, 69, 160);
+  color: #fff;
+}
+#bt1:hover{
+  background-color: rgb(1, 69, 130);
+}
+#bt2 {
+  background-color: #fff;
+}
+#bt2:hover{
+  background-color: rgba(0, 0, 0, 0.034);
+}
+
+@keyframes starts{
+  0%{display: none;}
+  100%{display: block;}
 }
