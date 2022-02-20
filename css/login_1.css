@@ -12,9 +12,49 @@ body{
 }
 #content {
   width: 100%;
-  height: 1200px;
+  height: 900px;
   text-align: center;
 }
+#topMenu {
+  margin: 0px auto;
+  width: 400px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topMenu > div , #topMenu > button{
+  position: relative;
+  transform: translateY(100px);
+}
+#back{
+  width: 120px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+#topMenu > button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url("../image/back_button.png")  no-repeat left;
+  background-size: contain;
+  z-index: 10;
+}
+#box1{
+  width: 160px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box2{
+  width: 120px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
 #logoImg{
   padding: 10px 10px;
   position: relative;
@@ -27,7 +67,7 @@ body{
 }
 #logo_img > img{
   position: relative;
-  top: 200px;
+  top: 130px;
 }
 #form > button, #form input{
   width: 400px;
