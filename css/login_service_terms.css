@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+}
+#container{
+  width: 100%;
+  height: auto;
+}
+#content {
+  padding-top: 100px;
+  width: 100%;
+  height: 900px;
+  text-align: center;
+}
+#topMenu {
+  margin: 0px auto;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topMenu > div {
+  border-bottom: 3px double rgba(61, 60, 60, 0.493);
+}
+#topMenu > #back{
+  border-bottom: 3px solid rgb(1, 61, 160);
+  
+}
+#back{
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+}
+#topMenu > div > button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url("../image/back_button.png")  no-repeat left;
+  background-size: contain;
+  z-index: 20;
+  cursor: pointer;
+}
+#box1{
+  width: 160px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box2{
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#textbox{
+  width: 550px;
+  margin: 0px auto;
+}
+#textbox > h1 {
+  font-size: 23px;
+  font-weight: bolder;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 400px;
+}
+input[type=checkbox] {
+    display:none;
+    width: 400px;
+}
+label {
+  padding-left: 35px;
+  margin: 30px; 
+  background-repeat: no-repeat;
+  background-image: url('../image/google_icon.png');
+  background-size: contain;
+  width: 350px;
+  display: flex;
+}
+#textbox > p{
+  width: 400px;
+  text-align: left;
+  padding-left: 65px;
+  color: rgba(32, 32, 32, 0.555);
+}
+#textbox > a {
+  display: flex;
+  float: right;
+}
+
