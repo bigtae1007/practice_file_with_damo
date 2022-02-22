@@ -24,30 +24,32 @@
       </div>
       <div id="textbox">
         <h1>서비스 약관에 동의해주세요.</h1>
-        <input type="checkbox" name="checker" id="checker1"><label for="checker1">모두 동의 (선택 정보 포함)</label>
+        <input type="checkbox" name="selectAll" id="checker1" onclick="selectAll(this)"><label for="checker1">모두 동의 (선택 정보 포함)</label>
         <p>전체동의는 필수 및  선택정보에 대한 동의도 포함되어 있으며,
           개별적으로 동의를 선택하실 수 있습니다. 선택항목에 대한 동의를 거부하시는 경우에도 서비스 이용이 가능합니다.
         </p>
-        <a href="#">
-          <p>보기</p>
-        </a>
-        <input type="checkbox" name="checker" id="checker2"><label for="checker2">[필수] 개인정보 수집 및 이용에 동의합니다.</label>
-        <a href="#">
-          <p>보기</p>
-        </a>
-        <input type="checkbox" name="checker" id="checker3"><label for="checker3">[필수] 위치 기반 정보 제공에 동의합니다.</label>
-        <a href="#">
-          <p>보기</p>
-        </a>
-        <input type="checkbox" name="checker" id="checker4"><label for="checker3">[선택] 마케팅 정보 수신에 동의합니다.</label>
+        <div>
+          <a href="#">
+            <p>보기</p>
+          </a>
+          <input type="checkbox" name="checker" id="checker2" onclick="checkSelectAll()"><label for="checker2">[필수] 개인정보 수집 및 이용에 동의합니다.</label>
+          <a href="#">
+            <p>보기</p>
+          </a>
+          <input type="checkbox" name="checker" id="checker3" onclick="checkSelectAll()"><label for="checker3">[필수] 위치 기반 정보 제공에 동의합니다.</label>
+          <a href="#">
+            <p>보기</p>
+          </a>
+          <input type="checkbox" name="checker" id="checker4" onclick="checkSelectAll()"><label for="checker4">[선택] 마케팅 정보 수신에 동의합니다.</label>
+        </div>
       </div>
       <div id="but">
-        <a href="#">
-          <button type="submit">다음</button>
+        <a href="sign_up.html">
+          <button type="button" id="bt1">다 음</button>
         </a>
       </div>
    </div>
   </div>
-  <script src="js/history_back.js"></script>
+  <script src="js/all_selected.js"></script>
 </body>
 </html>

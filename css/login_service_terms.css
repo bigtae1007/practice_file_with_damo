@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  width: 100%;
-}
 #container{
   width: 100%;
   height: auto;
@@ -29,7 +26,6 @@ body{
 }
 #topMenu > #back{
   border-bottom: 3px solid rgb(1, 61, 160);
-  
 }
 #back{
   width: 120px;
@@ -61,28 +57,33 @@ body{
   align-items: center;
 }
 #textbox{
-  width: 550px;
+  width: 440px;
+  height: 600px;
   margin: 0px auto;
 }
 #textbox > h1 {
-  font-size: 23px;
+  font-size: 30px;
   font-weight: bolder;
   padding-top: 100px;
   padding-bottom: 50px;
   width: 400px;
+  margin: 0px auto;
 }
-input[type=checkbox] {
+input[type=checkbox]{
+  display: none;
+}
+input[type=checkbox] + label {
     display:none;
     width: 400px;
+    padding-left: 35px;
+    margin: 30px; 
+    background-repeat: no-repeat;
+    background-image: url('../image/check_none.png');
+    background-size: contain;
+    display: flex;
 }
-label {
-  padding-left: 35px;
-  margin: 30px; 
-  background-repeat: no-repeat;
-  background-image: url('../image/google_icon.png');
-  background-size: contain;
-  width: 350px;
-  display: flex;
+input[type='checkbox']:checked +label{
+  background-image: url('../image/check_checked.png');
 }
 #textbox > p{
   width: 400px;
@@ -90,8 +91,20 @@ label {
   padding-left: 65px;
   color: rgba(32, 32, 32, 0.555);
 }
-#textbox > a {
+#textbox > div > a {
   display: flex;
   float: right;
 }
-
+#but{
+  position: relative;
+  bottom: 1px;
+}
+#but > a > button{
+  width: 400px;
+  height: 70px;
+  background-color: rgba(48, 48, 49, 0.384);
+  color: #fff;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+}
