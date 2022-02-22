@@ -18,6 +18,7 @@ document.getElementById('next').addEventListener("click",function(){
   alert("가입완료");
 
   document.getElementById('bt2').disabled = false;
+  document.getElementById('bt2').style.backgroundColor ="rgb(1, 61, 160)";
 })
 
 }, { once : true});
