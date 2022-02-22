@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  width: 100%;
+  height: auto;
+}
+#content {
+  padding-top: 100px;
+  width: 100%;
+  height: 900px;
+  text-align: center;
+}
+#topMenu {
+  margin: 0px auto;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topMenu > div{
+  border-bottom: 3px solid rgb(1, 61, 160);
+}
+#topMenu > #box2 {
+  border-bottom: 3px double rgba(61, 60, 60, 0.493);
+}
+#back{
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+}
+#topMenu > div > button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url("../image/back_button.png")  no-repeat left;
+  background-size: contain;
+  z-index: 20;
+  cursor: pointer;
+}
+#box1{
+  width: 160px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box2{
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#textbox{
+  width: 440px;
+  height: 600px;
+  margin: 0px auto;
+}
+#textbox > h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 400px;
+  margin: 0px auto;
+}
+#textbox > h3{
+  text-align: left;
+  padding-bottom: 20px;
+}
+#textbox > button {
+  width: 140px;
+  height: 70px;
+  float: right;
+  background-color: rgb(1, 61, 160);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+input {
+  position: relative;
+  width: 300px;
+  height: 70px;
+  border: 3px solid rgba(46, 44, 44, 0.5);
+  border-radius: 10px 0 0 10px;
+  font-size: 18px;
+  border-right: none;
+}  
+#but{
+  position: relative;
+  bottom: 1px;
+}
+#but > a > button{
+  width: 400px;
+  height: 70px;
+  background-color: rgb(1, 61, 160);
+  color: #fff;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+}
