@@ -82,6 +82,8 @@
   font-size: 20px;
   border-radius: 0 10px 10px 0;
   border: none;
+  cursor: pointer;
+
 }
 input {
   position: relative;
@@ -104,4 +106,5 @@ input {
   font-size: 30px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
