@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMO</title>
+  
+<link rel="stylesheet" href="css/회원가입.css">
+</head>
+<body>
+  <div id="container">
+    <div id="content">
+      <div id="topMenu">
+        <div id="back">
+         <button onclick="history.back()"></button>
+       </div>
+        <div id="box1">
+          <h1>회원 가입</h1>
+        </div>
+        <div id="box2">
+          
+        </div>
+      </div>
+      <div id="textbox">
+       <ul>
+         <li>아이디(e-mail)<sup>*</sup></li>
+         <input type="email" placeholder="이메일 주소를 입력해주세요" required>
+         <li>비밀번호<sup>*</sup></li>
+         <input type="password" placeholder="비밀번호를 입력해주세요" required>
+         <li>비밀번호 확인<sup>*</sup></li>
+         <input type="password" placeholder="비밀번호를 한번 더 입력해주세요" required>
+         <li>닉네임</li>
+         <input type="text" placeholder="닉네임을 입력해주세요">
+         <li>자기소개</li>
+         <textarea id="textarea" cols="10" rows="3" placeholder="간단한 자기소개를 입력해주세요"></textarea>
+       </ul>
+      </div>
+      <div id="but">
+        <a href="mainpage.html">
+          <button type="submit" id="bt2" >완 료</button>
+        </a>
+      </div>
+   </div>
+  </div>
+  <script src="js/history_back.js"></script>
+</body>
+</html>
