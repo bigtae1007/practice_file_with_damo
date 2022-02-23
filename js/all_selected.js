@@ -4,6 +4,13 @@ function selectAll(selectAll) {
   checkboxes.forEach((checkbox) => {
     checkbox.checked = selectAll.checked
   })
+  if(document.getElementById('checker2').checked == true && document.getElementById('checker3').checked == true){
+    document.getElementById('bt1').disabled = false;
+    document.getElementById('bt1').style.backgroundColor = "rgb(1, 61, 160)"
+  }else{
+    document.getElementById('bt1').disabled = true;
+    document.getElementById('bt1').style.backgroundColor = "rgba(48, 48, 49, 0.384)"
+  }
 }
 
 function checkSelectAll() {
@@ -16,5 +23,14 @@ function checkSelectAll() {
     selectAll.checked = true;
   }else{
     selectAll.checked = false;
+  }
+
+
+  if(document.getElementById('checker2').checked == true && document.getElementById('checker3').checked == true){
+    document.getElementById('bt1').disabled = false;
+    document.getElementById('bt1').style.backgroundColor = "rgb(1, 61, 160)"
+  }else{
+    document.getElementById('bt1').disabled = true;
+    document.getElementById('bt1').style.backgroundColor = "rgba(48, 48, 49, 0.384)"
   }
 }
