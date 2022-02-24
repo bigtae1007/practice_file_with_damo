@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  width: 412px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* 상단 */
+#head {
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  border-bottom: 2px solid rgba(68, 63, 63, 0.267);
+}
+.boxSize_1{
+  height: 70px;
+  width: 100px;
+}
+#head > a > button {
+  width: 100px;
+}
+#search > button {
+  width: 30px;
+  height: 30px;
+} 
+
+/*content */
+
+#banner {
+  width: auto;
+  height: 110px;
+  border: 1px solid #000;
+  margin: 20px;
+  background: aqua;
+  border-radius: 20px;
+}
+#select_menu{
+  width: 412px;
+  height: 600px;
+  padding: 20px;
+}
+.select_box{
+  width: 175px;
+  height: 150px;
+  border: 1px solid #000;
+  float: left;
+}
+#place {
+  width: 372px;
+}
+
+/* 푸터 하단메뉴 */
+
+footer {
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid rgba(68, 63, 63, 0.267);
+}
+footer > div{
+  width: 82px;
+  height: 82px;
+  border: 1px solid #000;
+  float: left;
+}
