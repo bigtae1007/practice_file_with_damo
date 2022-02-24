@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  width: 100%;
+  height: auto;
+}
+#content {
+  padding-top: 100px;
+  width: 100%;
+  height: 900px;
+  text-align: center;
+}
+#topMenu {
+  margin: 0px auto;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topMenu > div{
+  border-bottom: 3px double rgba(61, 60, 60, 0.493);
+}
+#topMenu > #back {
+  border-bottom: 3px solid rgb(1, 61, 160);
+}
+#back{
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+}
+#topMenu > div > button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url("../image/back_button.png")  no-repeat left;
+  background-size: contain;
+  z-index: 20;
+  cursor: pointer;
+}
+#box1{
+  width: 160px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box2{
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#textbox{
+  padding-top: 100px;
+  width: 440px;
+  height: 600px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#textbox > a {
+  text-decoration: none;
+}
+#textbox > a > div {
+  width: 210px;
+  height: 150px;
+  border: 2px solid rgba(61, 60, 60, 0.493);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #000;
+}
+#textbox > a > div:hover {
+  background-color: rgb(28, 120, 167);
+  color: aliceblue;
+}
+#textbox > a > div:active{
+  background-color: rgb(1, 61, 160);
+}
+#search_id{
+  background: url("../image/search_id.png") no-repeat center;
+}
+#search_pw{
+  background: url("../image/search_pw.png") no-repeat center;
+}
