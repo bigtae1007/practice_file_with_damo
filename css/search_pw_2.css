@@ -92,7 +92,7 @@ input:focus {
   position: relative;
   bottom: 1px;
 }
-#but > a > button{
+#but >  button{
   width: 400px;
   height: 70px;
   background-color: rgb(1, 61, 160);
