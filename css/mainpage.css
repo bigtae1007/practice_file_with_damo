@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 #container{
   width: 412px;
@@ -15,7 +18,6 @@
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  padding-top: 100px;
   border-bottom: 2px solid rgba(68, 63, 63, 0.267);
 }
 #logo {
@@ -54,20 +56,26 @@
   border: none;
 } 
 
-/*content */
+/*content 배너*/
 
 #banner {
   width: auto;
   height: 110px;
-  border: 1px solid #000;
   margin: 20px;
-  background: aqua;
   border-radius: 20px;
 }
+#banner > div {
+  display: inline;
+}
+/* content 메인메뉴 */
+
 #select_menu{
   width: 412px;
-  height: 600px;
-  
+  height: 500px;
+}
+#select_menu > a{
+color: #000;
+text-decoration: none;
 }
 .select_box{
   width: 175px;
@@ -75,16 +83,88 @@
   border: 1px solid #000;
   float: left;
   border-radius: 10px;
+  padding: 0 15px 15px 15px;
+}
+.select_box > h2 {
+  line-height: 2;
+  font-size: 22px;
+  font-weight: 600;
+}
+.select_box > p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+#lesson {
+  margin: 0 20px;
+  background: url("../image/lesson_icon.png") no-repeat;
+  background-origin: content-box;
+  background-position: right bottom;
+  background-size: 60px 60px;
+  background-color: rgba(1, 61, 160, 0.1);
+}
+#teams {
+  background: url("../image/team_icon.png") no-repeat;
+  background-origin: content-box;
+  background-position: right bottom;
+  background-color: rgba(1, 61, 160, 0.1);
+  background-size: 60px 60px;
 }
 #place {
   width: 372px;
   margin: 20px;
-}
-#lesson {
-  margin: 0 20px;
+  background: url("../image/sports_icon.png") no-repeat bottom;
+  background-origin: content-box;
+  background-color: rgba(1, 61, 160, 0.2);
+  background-size: contain;
 }
 #partner{
   margin: 0 20px;
+    background: url("../image/partner_icon.png") no-repeat;
+  background-size: 60px 60px;
+  background-origin: content-box;
+  background-color: rgba(1, 61, 160, 0.1);
+  background-position: right bottom;
+}
+#active{
+  background: url("../image/activity_icon.png") no-repeat;
+  background-origin: content-box;
+  background-position: right bottom;
+  background-color: rgba(1, 61, 160, 0.1);
+  background-size: 60px 60px;
+}
+
+/* 추천 메뉴 */
+
+#best_menu{
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+}
+#best > h2{
+  float: left;
+}
+#best > button{
+  font-size: 20px;
+  float: right;
+}
+#discount > h2{
+  clear: both;
+  float: left;
+}
+#discount > button{
+  font-size: 20px;
+  float: right;
+}
+#recommend > h2{
+  clear: both;
+  float: left;
+}
+#recommend > button{
+  font-size: 20px;
+  float: right;
 }
 
 /* 푸터 하단메뉴 */
