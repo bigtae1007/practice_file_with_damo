@@ -11,6 +11,9 @@
   height: auto;
   margin: 0 auto;
 }
+button{
+  cursor: pointer;
+}
 
 /* 상단 */
 #head {
@@ -80,7 +83,6 @@ text-decoration: none;
 .select_box{
   width: 175px;
   height: 150px;
-  border: 1px solid #000;
   float: left;
   border-radius: 10px;
   padding: 0 15px 15px 15px;
@@ -134,39 +136,6 @@ text-decoration: none;
   background-size: 60px 60px;
 }
 
-/* 추천 메뉴 */
-
-#best_menu{
-  padding: 20px;
-  width: 100%;
-  height: auto;
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 20px;
-}
-#best > h2{
-  float: left;
-}
-#best > button{
-  font-size: 20px;
-  float: right;
-}
-#discount > h2{
-  clear: both;
-  float: left;
-}
-#discount > button{
-  font-size: 20px;
-  float: right;
-}
-#recommend > h2{
-  clear: both;
-  float: left;
-}
-#recommend > button{
-  font-size: 20px;
-  float: right;
-}
-
 /* 푸터 하단메뉴 */
 
 footer {
@@ -175,6 +144,7 @@ footer {
   border-top: 2px solid rgba(68, 63, 63, 0.267);  
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 footer > a {
   color: #000;
@@ -200,7 +170,7 @@ footer > a > div  > p {
   background-size: 100% 100%;
   padding: 10px 20px 30px 20px;
   background-origin: content-box;
-  background-color: rgba(1, 61, 160, 0.267);
+  font-weight: 600;
 }
 #map{
   background: url("../image/pin_icon_line.png") no-repeat top;
