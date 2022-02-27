@@ -24,13 +24,108 @@
         <img class="slide_img w3-animation-left" src="image/제목을 입력해주세요_-001 (2).jpg" alt="" style="width: 370px;height: 108px; border-radius: 20px;">
         <img class="slide_img w3-animation-left" src="image/제목을 입력해주세요_-001 (3).jpg" alt="" style="width: 370px;height: 108px; border-radius: 20px;">
         <img class="slide_img w3-animation-left" src="image/제목을 입력해주세요_-001 (4).jpg" alt="" style="width: 370px;height: 108px; border-radius: 20px;">
+        <div id="flex_box">
+          <div id="box_x"></div>
+          <div id="circle">
+            <button class="img_bt"></button>
+            <button class="img_bt"></button>
+            <button class="img_bt"></button>
+          </div>
+          <div id="count"><p></p></div>
+        </div>
       </div>
       <div id="bt_box">
-          <button id="lesson_bt">레슨</button>
-          <button id="team_bt">팀</button>
-          <button id="gym_bt">시설</button>
+          <button id="lesson_bt" onclick="change_lesson()">레슨</button>
+          <button id="team_bt" onclick="change_team()">팀</button>
+          <button id="gym_bt" onclick="change_gym()">시설</button>
       </div>
       <div id="lesson_event">
+        <div id="select_lesson">
+          <img src="image/select_event_1.png" style="width: 412px; padding: 20px;">
+        </div>
+        <div class="best_menu">
+          <div class="best">
+            <h2>인기 스포츠</h2>
+            <button>&#10095;</button>
+            <div class="market">
+              <div>
+                
+              </div>
+              <div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="discount">
+            <h2>할인가로 즐겨봐요!</h2>
+            <button>&#10095;</button>
+            <div class="market">
+              <div>
+                
+              </div>
+              <div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="recommend">
+            <h2>이런 스포츠는 어때요?</h2>
+            <button>&#10095;</button>
+            <div class="market">
+              <div>
+                
+              </div>
+              <div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="team_event">
+        <div id="select_lesson">
+          <img src="image/select_event_2.png" style="width: 412px; padding: 20px;">
+        </div>
+        <div class="best_menu">
+          <div class="best">
+            <h2>인기 스포츠</h2>
+            <button>&#10095;</button>
+            <div class="market">
+              <div>
+                
+              </div>
+              <div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="discount">
+            <h2>할인가로 즐겨봐요!</h2>
+            <button>&#10095;</button>
+            <div class="market">
+              <div>
+                
+              </div>
+              <div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="recommend">
+            <h2>이런 스포츠는 어때요?</h2>
+            <button>&#10095;</button>
+            <div class="market">
+              <div>
+                
+              </div>
+              <div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gym_event">
         <div id="select_lesson">
           <img src="image/select_event.png" style="width: 412px; padding: 20px;">
         </div>
@@ -73,26 +168,26 @@
           </div>
         </div>
       </div>
-
       </div>
     <footer>
       <a href="mainpage.html">
         <div id="home"><p>홈</p></div>
       </a>
-      <a href="#">
+      <a href="mappage.html">
         <div id="map"><p>주변검색</p></div>
       </a>
-      <a href="#">
+      <a href="chatpage.html">
         <div id="chat"><p>채팅</p></div>
       </a>
-      <a href="#">
+      <a href="profilepage.html">
         <div id="profile"><p>내 정보</p></div>
       </a>
-      <a href="#">
+      <a href="morepage.html">
         <div id="more"><p>더보기</p></div>
       </a>
     </footer>
   </div>
   <script src="js/auto._slide.js"></script>
+  <script src="js/event_select.js"></script>
 </body>
 </html>
