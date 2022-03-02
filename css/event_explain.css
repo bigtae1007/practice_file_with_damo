@@ -182,6 +182,10 @@ display: inline-block;
   text-align: center;
   color: rgba(1, 61, 160, 0.9)  ;
 }
+#more_price > a {
+  text-decoration: none;
+  color: #000;
+}
 
 /* 시설정보 */
 
@@ -218,11 +222,11 @@ margin: 0 20px;
 /* 문의 / 예약 버튼 */
 
 footer{
-  height: 60px;
   padding-left: 10px;
+  margin-bottom: 10px;
 }
 
-footer > div {
+footer > #heart {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -233,12 +237,13 @@ footer > div {
 }
 #heart_icon{
   display: none;
+  z-index: 99;
 }
 footer > button {
   width: 150px;
-  height: 60px;
+  height: 50px;
   float: right;
-  margin: 0 5px;
+  margin: 0 10px;
   font-size: 20px;
   border-radius: 14px;
   font-weight: 600;
@@ -251,3 +256,62 @@ footer > button {
   background-color: rgba(1, 61, 160, 0.9);
   color: #fff;
 }
+
+ /* 푸터 > 문의하기 메뉴 */
+
+ #faq_1 {
+   text-align: center; 
+   border-radius: 15px 15px 0 0;
+   width: 392px;
+   height: 0;
+   overflow: hidden;
+   position: fixed;
+   z-index: 1;
+   bottom: 0;
+   transition: 0.5s;
+   background-color: #fff;
+ }
+ #faq_1 > h2 {
+   display: inline-block;
+   position: relative;
+   left: 27px;
+   letter-spacing: 0.3em;
+   font-weight: bolder;
+   margin-top: 10px;
+ }
+ #faq_1 > button {
+   float: right;
+   width: 30px;
+   height: 30px;
+   font-size: 30px;
+   line-height: 20px;
+   text-decoration: none;
+   margin: 10px 10px 0 0;
+   border: none;
+   background-color: rgba(0, 0, 0, 0);
+   color: rgba(0, 0, 0, 0.6);
+ }
+ #faq_1 > button:hover {
+   font-weight: bolder;
+   color: #000;
+   border: 2px solid #000;
+ }
+ #faq_icon{
+   display: flex;
+   justify-content: center;
+ }
+ #faq_icon > div{
+   margin: 20px 10px 50px 10px;
+ }
+ .faq_icon_1  {
+   width: 60px;
+   height: 60px;
+   overflow: hidden;
+   border: none;
+   background-color: rgba(0, 0, 0, 0);
+ }
+
+ .faq_icon_1 > p{
+   text-align: center;
+   display: inline-block;
+ }

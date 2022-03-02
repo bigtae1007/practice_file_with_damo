@@ -46,7 +46,7 @@
           <p><b>200,000 ~ 400,000 \</b></p>
         </div>
         <div id="more_price" class="price_box">
-          <p><b>자세히 보기 <span>+</span> </b></p>
+          <a href="#"><p><b>자세히 보기 <span>+</span> </b></p></a>
         </div>
         <h3>시설 정보</h3>
         <button>+</button>
@@ -94,16 +94,35 @@
         </div>
       </div>
       <footer>
-        <div >
+        <div id="heart" onclick="display_img()">
           <img id="heart_icon" src="image/heart_icon_fill.png" width="40px" height="40px">
         </div>
         <button id="reserve">예약하기</button>
-        <button id="faq">문의하기</button>
+        <button id="faq" onclick="open_menu()">문의하기</button>
+        <div id="faq_1">
+          <h2>문의하기</h2>
+          <button onclick="close_menu()">&times;</button>
+          <div id="faq_icon">
+            <div>
+              <button class="faq_icon_1"><img src="image/kakao_icon.png" style="width: 50px;height: 50px; border-radius: 50%;"></button>            
+              <p>카카오톡</p>
+            </div>
+            <div>
+              <button class="faq_icon_1"><img src="image/facebook_icon.png" style="width: 50px;height: 50px;border-radius: 50%;"></button>
+              <p>SMS 문자</p>
+            </div>
+            <div>
+              <button class="faq_icon_1"><img src="image/google_icon.png" style="width: 50px;height: 50px;border-radius: 50%;"></button>
+              <p>전화</p>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </div>
   <script src="js/history_back.js"></script>
   <script src="js/button_slide.js"></script>
   <script src="js/hide_box.js"></script>
+  <script src="js/slide_menu.js"></script>
 </body>
 </html>
