@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMO</title>
+  <link rel="stylesheet" href="css/reserve.css">
+</head>
+<body>
+  <div id="container">
+    <header id="head"> 
+      <div>
+        <button type="button" onclick="history.back()">&loarr;</button> 
+      </div>
+      <div id="logo"><p>시설 - 농구</p></div>
+      <div id="search" class="boxSize_1">
+      </div>
+    </header>
+    <div id="content">
+      <div class="select_box">
+        <img src="image/search_icon.png" style="width: 110px; height: 110px;">
+        <h2>박스타 아카데미</h2>
+        <p>경기 고양시 덕양구 마상로 180번길 194 코리아 농구교실</p> 
+        <div>       
+          <span>&starf;</span>
+          <p> 4.7 (40)</p>
+        </div>
+      </div>
+      <div id="date" class="select_time">
+        <h3 >날짜 선택</h3>
+        <button onclick="open_date()">&#10095</button>
+      </div>
+      <div id="time" class="select_time">
+        <h3>시간 선택</h3>
+        <button>&#10095</button>
+      </div>
+      <button>다음</button>
+    </div>
+    <div id="select_date">
+      <div class="boxSize_1"></div>
+      <div><p>날짜 선택</p></div>
+      <div class="boxSize_1">
+        <button onclick="close_date()">&times;</button>
+      </div>
+    <table id="calendar">
+      <tr class="space_between">
+        <td ><label onclick="prevCalendar()"> ◀ </label></td>
+        <td id="calendarTitle">yyyy년 m월</td>
+        <td ><label onclick="nextCalendar()"> ▶ </label></td>
+      </tr>
+      <tr class="space_between">
+        <td style="color: #c00;">일</td>
+        <td>월</td>
+        <td>화</td>
+        <td>수</td>
+        <td>목</td>
+        <td>금</td>
+        <td style="color: skyblue;">토</td>
+      </tr>
+    </table>
+    </div>
+  </div>
+  <script src="js/history_back.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/slide_menu.js"></script>
+</body>
+</html>

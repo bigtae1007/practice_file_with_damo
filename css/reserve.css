@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+#container{
+  width: 412px;
+  height: auto;
+  margin: 0 auto;
+}
+button{
+  cursor: pointer;
+}
+
+/* 상단 */
+#head {
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(68, 63, 63, 0.2);
+}
+#head > #logo {
+  width: 212px;
+  height: 70px;
+  justify-content: center;
+  text-align: center;
+  line-height: 70px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.boxSize_1{
+  height: 70px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right; 
+}
+#head > div {
+  text-decoration: none;
+  color: #000;
+  width: 100px;
+}
+#head > div > button {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+
+
+
+ /* 해당 내용 */
+ #content { 
+   width: 400px;
+ }
+.select_box{
+  width: 400px;
+  height: 160px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 10px solid rgba(83, 79, 79, 0.185);
+}
+.select_box > img {
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin-right: 20px;
+  float: left;
+}
+.select_box > h2 {
+  float: left;
+}
+.select_box > p{
+  float: left;
+  font-size: 12px;
+  margin: 5px 0 ;
+  width: 250px;
+}
+.select_box > div > span {
+  float: left;
+  color: rgb(1 , 61 , 160);
+}
+.select_box > div{
+  width: 350px;
+}
+.select_box > div > p{
+  float: left;
+}
+
+/* 선택 메뉴 */
+
+.select_time {
+  height: 70px;
+  border-bottom: 1px solid rgba(68, 63, 63, 0.2);
+}
+.select_time > h3 {
+display: inline-block;
+line-height: 70px;
+margin-left: 20px;
+}
+.select_time > button { 
+  float: right;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(1, 1, 1, 0);
+  font-size: 25px;
+  line-height: 10px;
+  margin: 20px 20px;
+}
+#content > button {
+  width: 400px;
+  height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgb(10 , 100 , 160);
+  color: #fff;
+  border: none;
+  margin-top: 400px;
+}
+
+/* 시간 선택 */
+
+#select_date{
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  border-bottom: 1px solid rgba(68, 63, 63, 0.2);
+}
+
+#select_date > div > button {
+  font-size: 30px;
+  border: none;
+  background-color: #fff;
+}
+
+/* 날짜 선택 달력 */
+#calendar {
+  text-align: center;
+  width: 400px;
+}
+td {
+  width: 40px;
+}
+
+#select_date {
+  width: 392px;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  transition: 0.5s;
+  background-color: #fff;
+}
