@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+#container{
+  width: 412px;
+  height: auto;
+  margin: 0 auto;
+}
+button{
+  cursor: pointer;
+}
+
+/* 상단 */
+#head {
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid rgba(83, 79, 79, 0.185);
+  margin-bottom: 20px;
+}
+#head > #logo {
+  width: 212px;
+  height: 70px;
+  justify-content: center;
+  text-align: center;
+  line-height: 70px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.boxSize_1{
+  height: 70px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right; 
+}
+#head > div {
+  text-decoration: none;
+  color: #000;
+  width: 100px;
+}
+#head > div > button {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+/* content */
+
+#top_menu{
+  display: flex;
+  justify-content: space-between;
+}
+.menu_button{
+  width: 104px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  font-size: 18px;
+}
+
+
+/* 변경되는 메뉴 디자인 js */
+.active{
+  font-size: 20px;
+  border-bottom: 2px solid rgba(1, 61, 160, 1);
+  font-weight: bold;
+}
