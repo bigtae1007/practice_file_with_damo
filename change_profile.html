@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMO</title>
+  <link rel="stylesheet" href="css/change_profile.css">
+</head>
+<body>
+  <div id="container">
+    <header id="head"> 
+      <div>
+        <button type="button" onclick="history.back()">&loarr;</button> 
+      </div>
+      <div id="logo"><p>내 프로필</p></div>
+      <div id="search" class="boxSize_1"></div>
+    </header>
+    <div id="profile_photo">
+      <button type="button"></button>
+    </div>
+    <div id="input_proflie">
+      <form action="#">
+        <label for="id">아이디</label>
+        <input type="text" id="id" placeholder="damo@damo.com" readonly>
+        <label for="nick_name">이름</label>
+        <input type="text" id="nick_name" placeholder="DAMO" readonly>
+        <label for="name">닉네임</label>
+        <input type="text" id="name" placeholder="표시할 닉네임을 적어주세요">
+        <label for="introduce">자기 소개</label>
+        <textarea cols="30" rows="3" placeholder="자신을 표현해 주세요"></textarea>
+      </form>
+    </div>
+    <div id="button">
+      <button>저장</button>
+    </div>
+  
+  </div>
+  <script src="js/history_back.js"></script>
+</body>
+</html>
