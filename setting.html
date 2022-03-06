@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMO</title>
+  <link rel="stylesheet" href="css/setting.css">
+</head>
+<body>
+  <div id="container">
+    <header id="head"> 
+      <div>
+        <button type="button" onclick="history.back()">&loarr;</button> 
+      </div>
+      <div id="logo"><p>설정</p></div>
+      <div id="search" class="boxSize_1"></div>
+    </header>
+    <div id="content">
+      <div id="alarm">
+        <h4>알림</h4>
+        <div class="flex_box">
+          <p>마케팅 수신</p>
+          <label class="switch">
+           <input type="checkbox">
+           <span class="slider round"></span>
+         </label>
+        </div>
+        <div class="flex_box">
+          <p>활동 알림</p>
+          <label class="switch">
+           <input type="checkbox">
+           <span class="slider round"></span>
+          </label>
+      </div>
+      <div id="request">
+        <h4>문의</h4>
+        <p>서비스 문의</p>
+        <div class="flex_box">
+          <p>앱 버전</p>
+          <span>1.00.01</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/history_back.js"></script>
+</body>
+</html>
