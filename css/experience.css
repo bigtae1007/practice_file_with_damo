@@ -56,6 +56,7 @@ button{
 }
 /* content */
 
+/* topmenu */
 #top_menu{
   display: flex;
   justify-content: space-between;
@@ -68,10 +69,45 @@ button{
   font-size: 18px;
 }
 
+/* 하단 내용 */
+.menu_content{
+  display: none;
+}
+.menu_content:first-child{
+  display: block;
+}
+.select_box {
+  height: 100px;
+  padding: 10px;
+  margin: 20px 0;
+}
+.select_box > img {
+  margin-right: 20px;
+  float: left;
+}
+.select_box > p {
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: blue;
+}
+.text_box {
+  float: left;
+  height: 80px;
+  line-height: 30px;
+}
+.text_box > h3 + p {
+  color: rgba(83, 79, 79, 0.585);
+}
 
 /* 변경되는 메뉴 디자인 js */
 .active{
   font-size: 20px;
   border-bottom: 2px solid rgba(1, 61, 160, 1);
   font-weight: bold;
+}
+.display {
+  display: block;
 }
