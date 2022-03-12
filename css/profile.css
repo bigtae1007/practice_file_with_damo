@@ -22,6 +22,7 @@ header > h2 {
 }
 header > img{
   float: right;
+  cursor: pointer;
 }
 /* 프로필 내용 */
 /* 상단 프로필 */
