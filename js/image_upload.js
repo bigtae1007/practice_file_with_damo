@@ -11,6 +11,6 @@ function setDetailImage(event){
     };
     
     // console.log(image);
-    reader.readAsDataURL(image);
+    reader.readAsDataURL(image); 
   }
 }
