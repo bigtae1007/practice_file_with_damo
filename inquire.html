@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMO</title>
+  <link rel="stylesheet" href="css/inquire.css">
+</head>
+<body>
+  <div id="container">
+    <header id="head"> 
+      <div>
+        <button type="button" onclick="history.back()">&loarr;</button> 
+      </div>
+      <div id="logo"><p>문의하기</p></div>
+      <div id="search" class="boxSize_1"></div>
+    </header>
+    <div id="content">
+      <h3>카테고리</h3>
+      <select name="카테고리">
+        <option value="기본" class="setting">카테고리를 선택하세요</option>
+        <option value="계정">계정 관련</option>
+        <option value="환불">환불 관련</option>
+        <option value="건의">건의사항</option>
+        <option value="버그">에러사항</option>
+        <option value="기타">기타</option>
+      </select>
+      <h3>문의내용</h3>
+      <textarea name="문의내용"cols="30" rows="10"></textarea>
+      <form method="post" enctype="multipart/form-data">
+        <div class="button">
+            <label for="product_detail_image">
+            </label>
+        </div>
+        
+        <div id="images_container"></div>
+        <div class="form-group">
+          <input class="form-control form-control-user" type="file" multiple="multiple"
+          name="product_detail_image" id="product_detail_image" onchange="setDetailImage(event);">
+        </div>
+       </form>
+       <p>문의하신 내용의 답변은 가입하신 이메일로 전송됩니다.</p>
+       <button class="send_btn">문의하기</button>
+    </div>
+  </div>
+  <script src="js/history_back.js"></script>
+  <script src="js/image_upload.js"></script>
+</body>
+</html>
