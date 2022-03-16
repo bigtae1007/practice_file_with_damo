@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+#container{
+  width: 412px;
+  height: auto;
+  margin: 0 auto;
+}
+button{
+  cursor: pointer;
+}
+
+/* 상단 */
+#head {
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(68, 63, 63, 0.267);
+}
+#head > #logo {
+  width: 212px;
+  height: 70px;
+  justify-content: center;
+  text-align: center;
+  line-height: 70px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.boxSize_1{
+  height: 70px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right; 
+}
+#head > div {
+  text-decoration: none;
+  color: #000;
+  width: 100px;
+}
+#head > div > button {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+#search > button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+} 
+
+/* 하단 내용 */
+.community_box{
+  margin-top: 15px;
+}
+.event{
+  display: inline-block;
+  background-color: rgba(145, 212, 212, 0.33);
+  padding: 3px 5px;
+  font-size: 13px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.main_name{
+  margin: 10px 0;
+}
+.community_box > span{
+  color: skyblue;
+  font-size: 13px;
+  margin-right: 7px;
+}
+.leader > img{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 5px;
+}
+.leader > p{
+  float: left;
+  font-size: 0.7rem;
+}
+.meet_date > img{
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-right: 5px;
+  margin-left: 20px;
+}
+.meet_date > p {
+  float: left;
+  font-size: 0.7rem;
+}
+.member{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 10px solid rgba(204, 204, 204, 0.295);
+  padding: 15px 0;
+}
+
+/* 세부 정보 */
+
+#detail_box{
+  padding: 20px 10px;
+  border-bottom: 10px solid rgba(204, 204, 204, 0.295);
+}
+
+#detail_box > h3 {
+  margin: 25px 0 10px 0;
+}
+/* 정보 상자 */
+.info{
+  border-radius: 20px;
+  background-color: rgba(133, 174, 247, 0.189);
+  padding: 20px 10px;
+}
+.info_box{
+  display: flex;
+  margin: 10px 0;
+}
+.info_box > span{
+  width: 30%;
+  color: rgb(148, 145, 145);
+  font-weight: 600;
+  font-size: 15px;
+}
+.info_box > p{
+  width: 70%;
+  line-height: 1.5rem;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.info_box > p > span{
+  float: right;
+  padding-right: 20px;
+  color: rgba(0, 0, 255, 0.589);
+}
+
+/*  텍스트 내용 */
+
+.info_text > p{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* 참가 명단 */
+#participation {
+  padding: 20px 10px;
+  overflow: hidden;
+  height: 200px;
+}
+
+#participation > h3 > span {
+  color: rgba(133, 174, 247, 1);
+}
+#profile_box{
+  display: flex;
+  margin: 20px 0;
+}
+.profile_name{
+  text-align: center;
+  margin-right: 13px;
+}
+.profile_name > img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.profile_name > p{
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.profile_name > span{
+  font-size: 13px;
+  color: rgba(0, 0, 255, 0.589);
+}
+
+/* 푸터 */
+footer{
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+footer > #heart {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background: url("../image/heart_icon_line.png") no-repeat center;
+  background-size: 50%;
+  justify-content: center;
+  padding: 12.5px;
+}
+#heart_icon{
+  display: none;
+  width: 27px;
+  height: 27px;
+}
+footer > button {
+  width: 150px;
+  height: 50px;
+  float: right;
+  margin: 0 10px;
+  font-size: 20px;
+  border-radius: 14px;
+  letter-spacing: 0.2em;
+}
+#faq {
+  border: 3px solid rgba(1, 61, 160, 0.9);
+  color: rgba(1, 61, 160, 0.9);
+}
+#reserve {
+  background-color: rgba(1, 61, 160, 0.9);
+  color: #fff;
+}
