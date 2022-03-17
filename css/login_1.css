@@ -93,6 +93,13 @@ body{
   display: flex ;
   justify-content: center;
 }
+#form > a {
+  cursor: pointer;
+  text-decoration: none;
+}
+#form > a > input {
+  cursor: pointer;
+}
 #form > div > a{
   text-decoration: none;
   color: black;
