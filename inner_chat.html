@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMO</title>
+  <link rel="stylesheet" href="css/inner_chat.css">
+</head>
+<body>
+  <div id="container">
+    <header id="head"> 
+      <div>
+        <button type="button" onclick="history.back()">&loarr;</button> 
+      </div>
+      <div id="logo"><p>상문동말디니</p></div>
+      <div id="search" class="boxSize_1">
+        <button type="button"><img src="image/filter_icon.png" alt="" style="width: 30px; height: 30px;"></button>      
+      </div>
+    </header>
+    <div id="content">
+      <div id="nowTime"><p>2022-03-18 금요일</p></div>
+      <div id="chat_box">
+        <div class="receive_chat_box">
+          <p class="message">안녕하세요</p>
+          <span class="time">오후 1:42</span>
+        </div>
+        <div class="send_chat_box">
+          <span class="time">오후 1:55</span>
+          <p class="message">안녕하세요~~</p>
+        </div>
+      </div>
+      <div id="send_message">
+        <img src="image/camera_icon.png">
+        <div id="send_box">
+          <textarea name="" id="" cols="20" rows="5"></textarea>
+          <button>sd</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/history_back.js"></script>
+</body>
+</html>

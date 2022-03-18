@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+#container{
+  width: 412px;
+  height: auto;
+  margin: 0 auto;
+}
+button{
+  cursor: pointer;
+}
+
+/* 상단 */
+#head {
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+#head > #logo {
+  width: 212px;
+  height: 70px;
+  justify-content: center;
+  text-align: center;
+  line-height: 70px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.boxSize_1{
+  height: 70px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right; 
+}
+#head > div {
+  text-decoration: none;
+  color: #000;
+  width: 100px;
+}
+#head > div > button {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+#search > button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+} 
+
+/* 하단 내용 */
+
+#nowTime {
+  width: 60%;
+  height: 30px;
+  margin: 10px auto;
+  border-radius: 15px;
+  background-color: rgb(105, 96, 96);
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+}
+/* 받은 채팅 */
+.receive_chat_box {
+  display: flex;
+  margin: 10px 0;
+}
+.message{
+  display: inline-block;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+.time{
+  display: inline-block;
+  font-size: 10px;
+  color: rgb(110, 101, 101);
+  padding: 23px 10px 0 ;
+}
+/* 보낸 채팅 */
+.send_chat_box{
+  display: flex;
+  margin: 10px 0;
+  justify-content: right;
+}
+.send_chat_box > p {
+  background-color: skyblue;
+}
+
+/* 채팅 작성 */
+#send_message{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 600px;
+}
+#send_message > img { 
+  width: 50px;
+  height: 50px;
+}
+
+#send_box{
+  border: 1px solid #000;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+#send_box > textarea {
+  border: 1px solid #000;
+  width: 270px;
+  height: 100%;
+  margin: 0 10px 0 0;
+  border-radius: 18px;
+  resize: none;
+  padding: 10px;
+  overflow-y: hidden;
+}
+#send_box > button {
+  border: 1px solid #000;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
