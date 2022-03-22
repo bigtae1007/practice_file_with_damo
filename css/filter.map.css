@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 412px;
+  margin: 0 auto;
+}
+
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+#close_btn {
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* content */
+#content > h3 {
+  margin-top: 25px;
+}
+
+/* 분류 체크박스 */
+#select_1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.checkbox {
+  display: flex;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.checkbox > div{
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+input[type="checkbox"]:checked + label >div {
+  background: url('../image/check_checked.png') center no-repeat;
+  background-size: 130%;
+  border-color: #000;
+}
+input[type="checkbox"]:checked + label >p {
+  color: skyblue;
+  font-weight: bold;
+}
+
+.opacity {
+  display: none;
+}
+
+/* 종목 체크 박스 */
+
+/* 가격 선택 */
+#select_3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+input[type='text'] {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 50px;
+  text-align: center;
+  width: 180px;
+}
+
+/* 실행 버튼 */
+#act_btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.btn_1 {
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 140px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn_2 {
+  background-color: skyblue;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 250px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}
