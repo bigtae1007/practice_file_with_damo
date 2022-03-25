@@ -1,5 +1,5 @@
 function selectAll(selectAll) {
-  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const checkboxes = document.querySelectorAll('.main_filter');
 
   checkboxes.forEach((checkbox) => {
     checkbox.checked = selectAll.checked
