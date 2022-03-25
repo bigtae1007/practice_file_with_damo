@@ -19,35 +19,35 @@
       <h3>분류</h3>
       <div id="select_1">
         <div>
-          <input type="checkbox" id="check_all" class="opacity" name="selectAll" onclick="selectAll(this)"> 
+          <input type="checkbox" id="check_all" class="opacity main_filter" name="selectAll" onclick="selectAll(this)"> 
           <label class="checkbox" for="check_all">
             <div></div>
             <p>전체</p>
           </label>
         </div>
         <div>
-          <input type="checkbox" id="check_place" class="opacity" name="checker" onclick="checkSelectAll()"> 
+          <input type="checkbox" id="check_place" class="opacity main_filter" name="checker" onclick="checkSelectAll()"> 
           <label class="checkbox" for="check_place">
             <div></div>
             <p>시설</p>
           </label>
         </div>
         <div>
-          <input type="checkbox" id="check_lesson" class="opacity" name="checker" onclick="checkSelectAll()"> 
+          <input type="checkbox" id="check_lesson" class="opacity main_filter" name="checker" onclick="checkSelectAll()"> 
           <label class="checkbox" for="check_lesson">
             <div></div>
             <p>레슨</p>
           </label>
         </div>
         <div>
-          <input type="checkbox" id="check_team" class="opacity" name="checker" onclick="checkSelectAll()"> 
+          <input type="checkbox" id="check_team" class="opacity main_filter" name="checker" onclick="checkSelectAll()"> 
           <label class="checkbox" for="check_team">
             <div></div>
             <p>팀</p>
           </label>
         </div>
         <div>
-          <input type="checkbox" id="check_actv" class="opacity" name="checker" onclick="checkSelectAll()"> 
+          <input type="checkbox" id="check_actv" class="opacity main_filter" name="checker" onclick="checkSelectAll()"> 
           <label class="checkbox" for="check_actv">
             <div></div>
             <p>액티비티</p>
@@ -56,7 +56,36 @@
       </div>
       <h3>종목</h3>
       <div id="select_2">
-        
+        <input type="checkbox" name="select_event" id="soccer" class="opacity select_event">
+        <label for="soccer">
+          <img src="image/soccer_black.png" alt="" class="img_chg">
+          <p class="text_event">축구</p>
+        </label>
+        <input type="checkbox" name="select_event" id="baseball" class="opacity select_event">
+        <label for="baseball">
+          <img src="image/baseball_black.png" alt="" class="img_chg">
+          <p class="text_event">야구</p>
+        </label>
+        <input type="checkbox" name="select_event" id="basketball" class="opacity select_event">
+        <label for="basketball">
+          <img src="image/basketball_black.png" alt="" class="img_chg">
+          <p class="text_event">농구</p>
+        </label>
+        <input type="checkbox" name="select_event" id="tennis" class="opacity select_event">
+        <label for="tennis">
+          <img src="image/tabletennis_black.png" alt="" class="img_chg">
+          <p class="text_event">테니스</p>
+        </label>
+        <input type="checkbox" name="select_event" id="health" class="opacity select_event">
+        <label for="health">
+          <img src="image/health_black.png" alt="" class="img_chg">
+          <p class="text_event">헬스</p>
+        </label>
+        <input type="checkbox" name="select_event" id="badminton" class="opacity select_event">
+        <label for="badminton">
+          <img src="image/badminton_black.png" alt="" class="img_chg">
+          <p class="text_event">배드민턴</p>
+        </label>
       </div>
       <h3>가격</h3>
       <div id="select_3">
@@ -71,5 +100,6 @@
     </div>
   </div>
   <script src="js/all_selected_normal.js"></script>
+  <script src="js/filter_menu.js"></script>
 </body>
 </html>
