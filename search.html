@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMO</title>
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+  <div id="container">
+    <header id="head"> 
+      <button type="button" onclick="history.back()" class="back_btn">&loarr;</button> 
+      <div id="search" class="boxSize_1">
+        <input type="text" class="search_text" id="search_text">
+        <button type="button" id="search_btn" class="search_btn">
+          <img src="image/search_icon.png" alt="">
+        </button>
+      </div>
+    </header>
+    <div id="content">
+      <h3>최근 검색어</h3>
+      <p class="text">최근 검색어가 없습니다.</p>
+      <div id="new_text">       
+      </div>
+    </div>
+  </div>
+  <script src="js/history_back.js"></script>
+  <script src="js/add_text.js"></script>
+</body>
+</html>
